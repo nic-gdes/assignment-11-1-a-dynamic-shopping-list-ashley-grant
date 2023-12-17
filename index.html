@@ -1,47 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>My Shopping List</title>
-    <style>
-      li {
-        margin-bottom: 10px;
-      }
-
-      li button {
-        font-size: 8px;
-        margin-left: 20px;
-        color: #666;
-      }
-    </style>
-  </head>
-  <body>
-
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
     <h1>My Shopping List</h1>
+  </header>
+  <main>
+    <section>
+      <form id="addToList">
+        <label for="itemToAdd">Add a new item:</label>
+        <input type="text" id="itemToAdd" placeholder="Add a new item:..." required/>
+        <button id="confirmbutton" type="confirm" value="Confirm">Confirm</button>
+      </form>
+    </section>
 
-    <div class="unorderedList">
-      <label for="item">Enter a new item:</label>
-      <input type="text" name="item" id="item" class="input">
-      <button class="button">Add item</button>
+    <div class="listwrapper">
+      <ul id="list"></ul>
     </div>
 
-    <!-- <ul class="unorderedList">
+  </main>
 
-    </ul> -->
-
-    <script>
-
-      document.querySelector(unorderedList)
-
-      document.querySelector(input)
-
-      document.querySelector(button)
-
-      button.addEventListener('click', function(e)) {
-      let myItem = input.value;
-      input.value = "";
-}
-
-    </script>
-  </body>
+    <script src="./script.js"></script>
+</body>
 </html>
